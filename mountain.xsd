@@ -1,0 +1,98 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="mountainsCatalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="highMountains">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mountain" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:short" name="height"/>
+                    <xs:element type="xs:string" name="highestPeak"/>
+                    <xs:element type="xs:string" name="region"/>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element name="site">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="href" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                  <xs:attribute type="xs:float" name="latitude" use="optional"/>
+                  <xs:attribute type="xs:float" name="longitude" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mediumMountains">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mountain" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:short" name="height"/>
+                    <xs:element type="xs:string" name="highestPeak"/>
+                    <xs:element type="xs:string" name="region"/>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element name="site">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="href" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                  <xs:attribute type="xs:float" name="latitude" use="optional"/>
+                  <xs:attribute type="xs:float" name="longitude" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="lowMountains">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mountain" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:short" name="height"/>
+                    <xs:element type="xs:string" name="highestPeak"/>
+                    <xs:element type="xs:string" name="region"/>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element name="site">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="href" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                  <xs:attribute type="xs:float" name="latitude" use="optional"/>
+                  <xs:attribute type="xs:float" name="longitude" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

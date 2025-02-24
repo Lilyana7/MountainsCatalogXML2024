@@ -1,0 +1,109 @@
+body {
+	background-color: rgb(225, 211, 176);
+	font-family: Helvetica;
+}
+
+h1 {
+	font-size: 70px;
+	text-align: center;
+	color: #060404;
+	width: 99.3%;
+}
+
+p,
+a {
+	margin: 0px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	padding: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	text-overflow: ellipsis;
+}
+
+a {
+	color: white;
+}
+
+button:focus {
+	background-color: #FF7B01;
+}
+
+.button {
+	background-color: #353536;
+	border: 3px solid black;
+	border-radius: 15px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 4px 2px;
+	width: 32.9%;
+	cursor: pointer;
+	position: relative;
+}
+
+.highMountains {
+	width: 98.3%;
+	border: 3px solid black;
+	height: 600px;
+	margin-bottom: 25px;
+	background-color: #6fa57a;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.mediumMountains {
+	width: 98.3%;
+	border: 3px solid black;
+	height: 600px;
+	margin-bottom: 20px;
+	background-color: #6fa57a;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.lowMountains {
+	width: 98.3%;
+	border: 3px solid black;
+	height: 600px;
+	margin-bottom: 20px;
+	background-color: #6fa57a;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.highMountains img {
+	margin-right: 20px;
+	height: 300px;
+	width: 400px;
+	float: left;
+	border-radius: 15px;
+}
+
+.mediumMountains img,
+.lowMountains img {
+	margin-right: 20px;
+	height: 300px;
+	width: 400px;
+	display: block;
+	float: left;
+	border-radius: 15px;
+}
+
+#name {
+	font-size: 40px;
+	display: table-header-group;
+}
+
+
+#label {
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
